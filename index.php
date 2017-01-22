@@ -1,7 +1,7 @@
 <?php
 require "Models/classes.php";
 require "Views/views.php";
-$page = isset($_GET["p"]) ? $_GET["p"] : "home";
+$Page = isset($_GET["p"]) ? $_GET["p"] : "home";
 ?>
 
 <html>
@@ -14,7 +14,7 @@ RenderView("styles");
 </html>
 
 <body>
-    <main class="<?php echo $page; ?>">
-        <?php RenderView($page); ?>
+    <main class="<?php echo $Page; ?>">
+        <?php RenderView($Page); ?>
     </main>
 </body>
