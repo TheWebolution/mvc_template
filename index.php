@@ -5,13 +5,10 @@ $Page = isset($_GET["p"]) ? $_GET["p"] : "home";
 ?>
 
 <html>
-<head>
+
 <?php
-RenderView("scripts");
-RenderView("styles");
+RenderView("shared/head");
 ?>
-</head>
-</html>
 
 <body>
     <main class="<?php echo $Page; ?>">
