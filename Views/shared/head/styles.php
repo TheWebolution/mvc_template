@@ -8,7 +8,7 @@ $Styles = [
 
 function RenderStyles($Styles) {
     global $Page;
-    $allStyles = $Styles['shared'];
+    $allStyles = $Styles["shared"];
 
     if (isset($Styles[$Page])) {
         $allStyles = array_merge($Styles[$Page], $allStyles);

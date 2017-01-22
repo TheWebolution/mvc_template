@@ -1,5 +1,5 @@
 <?php
-class query {
+class Query {
     private $dbhost = "HOSTNAME";
     private $dbuser = "USERNAME";
     private $dbpass = "DBPASSWORD";

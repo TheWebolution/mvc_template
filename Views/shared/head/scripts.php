@@ -8,7 +8,7 @@ $Scripts = [
 
 function RenderScripts($Scripts) {
     global $Page;
-    $allScripts = $Scripts['shared'];
+    $allScripts = $Scripts["shared"];
 
     if (isset($Scripts[$Page])) {
         $allScripts = array_merge($Scripts[$Page], $allScripts);
