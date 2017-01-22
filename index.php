@@ -14,10 +14,7 @@ RenderView("styles");
 </html>
 
 <body>
-    <?php new View("shared/topbar"); ?>
-    <?php new View("shared/sidebar"); ?>
-
-    <main class="<?php echo $page; ?> col-md-10 col-md-offset-2">
-        <?php new View($page); ?>
+    <main class="<?php echo $page; ?>">
+        <?php RenderView($page); ?>
     </main>
 </body>
