@@ -1,7 +1,7 @@
 <?php
-require "init.php";
 require "Models/classes.php";
 require "Views/views.php";
+require "init.php";
 ?>
 
 <html>

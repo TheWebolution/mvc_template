@@ -1,4 +1,6 @@
 <?php
+require "conf.php";
+
 function CheckUser() {
     global $Page;
     global $User;
@@ -10,8 +12,14 @@ function CheckUser() {
 }
 
 $Page = isset($_GET["p"]) ? $_GET["p"] : "home";
+$UrlSections = explode("/", $Page);
+$PageName = $UrlSections[0];
+$Root = "";
 
-$IsUserControlActive = false;
+for ($i = 0; $i < count($UrlSections); $i++) {
+    $Root .= "../";
+}
+
 if ($IsUserControlActive) {
     $User = new User($_SESSION["username"], $_SESSION["password"]);
     CheckUser();
